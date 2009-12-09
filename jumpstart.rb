@@ -4,7 +4,10 @@ puts "========================="
 puts "Specify the Project Name:"
 $__PROJECT_NAME__ = gets.chomp
 
-
+plugin 'rspec-on-rails-matchers', 
+  :git => 'git://github.com/joshknowles/rspec-on-rails-matchers.git'
+plugin 'rspec_expectation_matchers',
+  :git => "git://github.com/cyx/rspec_expectation_matchers.git"
 plugin 'auto_migrations',
   :git => 'git://github.com/pjhyett/auto_migrations.git'
 plugin 'hoptoad_notifier', 
