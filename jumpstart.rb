@@ -20,7 +20,7 @@ plugin 'limerick_rake',
 plugin 'jrails',
   :git => 'git://github.com/aaronchi/jrails.git'
 
-gems = %w(will_paginate aasm authlogic rack haml fastercsv faker)
+gems = %w(will_paginate aasm authlogic rack haml fastercsv faker cancan)
 
 gems.each { |g| gem g }
 file '.gems', gems.join("\n")
